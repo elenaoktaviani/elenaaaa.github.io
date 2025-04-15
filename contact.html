@@ -60,6 +60,40 @@
       text-decoration: none;
       color: inherit;
     }
+
+    /* Contact Form and CV Download Container */
+    .contact-form-container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 30px;
+    }
+
+    .contact-form {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    /* CV Download Section */
+    .cv-download {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 15px 20px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      width: auto;
+      margin-left: 0;
+    }
+
+    .cv-download a {
+      text-decoration: none;
+      padding: 10px 15px;
+    }
   </style>
 </head>
 <body>
@@ -90,25 +124,34 @@
   </section>
 
   
-  <!-- Contact Form -->
-  <section class="container my-5">
-    <div class="contact-card">
-      <h5 class="card-title text-center">Hubungi Saya</h5>
-      <form action="#" method="POST">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" name="name" required />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" name="email" required />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" href="contact.html" class="btn btn-primary w-100">Submit</button>
-      </form>
+  <!-- Contact Form and CV Download Section -->
+  <section class="container my-5 contact-form-container">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <div class="contact-card">
+        <h5 class="card-title text-center">Hubungi Saya</h5>
+        <form action="#" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- CV Download Section -->
+    <div class="cv-download">
+      <h5 class="text-center">Download CV</h5>
+      <a href="https://1drv.ms/w/c/be3635de67d3c9ad/EUA91ypSRrBCo4qVS13n4XgBuplr__MFz43lqujjLR6Tfg?e=ap2gcbnk" class="btn btn-primary" download>Download CV</a>
     </div>
   </section>
 
